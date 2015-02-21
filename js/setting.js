@@ -17,7 +17,6 @@ OpenSpending.year = '2013';
 OpenSpending.Styles = OpenSpending.Styles || {};
 
 OpenSpending.Styles.Cofog = {
-
   /* nomi city cofog */
   '1': { icon: 'icons/government-uk.svg', color: '#C75746', bcolor: '#935B3B' },
   '101': { icon: 'icons/government-uk.svg', color: '#C75746', bcolor: '#935B3B' },
