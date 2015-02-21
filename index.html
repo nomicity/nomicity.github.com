@@ -36,8 +36,8 @@ title: The Daily Bread
 getUseDatas();
 var datas = new Array();
 datas[0] = new Array();
-datas[0][0] = "2014";
-datas[0][1] = "nomi_budget";
+datas[0][0] = "2014,";
+datas[0][1] = "nomi_budget,";
 
 datas[1] = new Array();
 datas[1][0] = "2013";
@@ -140,8 +140,8 @@ var display = function() {
                   <th>表示する年度を選んでください </th>
                   <td>
                       <select name="selectedYear" id="year" onchange="setData(this.form);" style="width:200px;">
-                          <option value="2014">2014年度</option>
                           <option value="2013">2013年度</option>
+                          <option value="2014">2014年度</option>
                           <!--<option value="2011">2011年度</option>-->
                         <!--<option value="2010">2010年度</option>-->
                       </select>
