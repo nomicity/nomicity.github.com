@@ -28,7 +28,7 @@ title: 使途別予算額
             }
             else {
                 UseData.year = "2013";
-                UseData.identifier = "mutsu_city_2013_budget";
+                UseData.identifier = "nomi_budget_2013";
             }
         }
 	
@@ -41,7 +41,7 @@ title: 使途別予算額
     
 	datas[1] = new Array();
 	datas[1][0] = "2013";
-	datas[1][1] = "mutsu_city_2013_budget";
+	datas[1][1] = "nomi_budget_2013";
     
 	datas[2] = new Array();
 	datas[2][0] = "2011";
@@ -108,9 +108,9 @@ title: 使途別予算額
                                       //localApiCache: 'aggregate.json',
                                       dataset: OpenSpending.identifier,
                                       rootNodeLabel: 'Total',
-                                      drilldowns: ['category', 'subcategory'],
+                                      drilldowns: ['Category', 'Subcategory'],
                                       cuts: ['year:' + OpenSpending.year],
-                                      breakdown: 'subcategory',
+                                      breakdown: 'Subcategory',
                                       callback: dataLoaded
                                       });
           });

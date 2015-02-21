@@ -29,9 +29,9 @@ title: The Daily Bread
       UseData.identifier = paramArray["requestName"];
     }
     else {
-      UseData.year = "2014";
+      UseData.year = "2013";
             //UseData.year = "2013";
-      UseData.identifier = "mutsu_city_2013_budget";
+      UseData.identifier = "nomi_budget_2013";
     }
   }
 getUseDatas();
@@ -42,7 +42,7 @@ datas[0][1] = "mutsu_city_2012_budget";
 
 datas[1] = new Array();
 datas[1][0] = "2013";
-datas[1][1] = "mutsu_city_2013_budget";
+datas[1][1] = "nomi_budget_2013";
 
 datas[2] = new Array();
 datas[2][0] = "2011";
@@ -89,10 +89,10 @@ var display = function() {
                                    apiUrl: 'http://openspending.org/api',
                                    //localApiCache: 'aggregate.json',
                                    dataset: OpenSpending.identifier,
-                                   drilldowns: ['category', 'subcategory'],
+                                   drilldowns: ['Category', 'Subcategory'],
                                    cuts: ['year:' + OpenSpending.year],
                                    rootNodeLabel: 'Total',
-                                   breakdown: 'subcategory',
+                                   breakdown: 'Subcategory',
                                    callback: function(data) {
                                    
                                    $('#content-wrap').show();
