@@ -44,8 +44,8 @@ datas[1][0] = "2014";
 datas[1][1] = "nomi_budget";
 
 datas[2] = new Array();
-datas[2][1] = "2013"
-datas[2][2] = "nomi_budget_2013";
+datas[2][0] = "2013"
+datas[2][1] = "nomi_budget_2013";
 
 
 
@@ -57,7 +57,7 @@ function setData(frmObj) {
     
     for( var i = 0; i < datas.length; i++ ) {
         if( datas[i][0] == UseData.year ) {
-      UseData.identifier = datas[i][2];
+      UseData.identifier = datas[i][1];
       break;
         }
     }
