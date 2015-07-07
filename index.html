@@ -12,11 +12,14 @@ title: The Daily Bread
     var params = url.split("?");
     var paramms = [];
     //if( params.length >= 1 ) {
-      //
-        if( params.length >= 3 ) {
+      //パラメータあり
+        if( params.length >= 2 ) {
+          //分割
       paramms = params[1].split("&");
     }
+    //パラメータ用の配列を用意
     var paramArray = [];
+    //配列にパラメータを格納
     for ( i = 0; i < paramms.length; i++ ) {
         var item = paramms[i].split("=");
         paramArray.push(item[0]);
@@ -35,6 +38,7 @@ title: The Daily Bread
   }
 getUseDatas();
 var datas = new Array();
+
 datas[0] = new Array();
 datas[0][0] = "2015";
 datas[0][1] = "nomi_budget_2015";
