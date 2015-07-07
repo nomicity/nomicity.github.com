@@ -47,9 +47,9 @@ datas[1] = new Array();
 datas[1][0] = "2014";
 datas[1][1] = "nomi_budget";
 
-//datas[2] = new Array();
-//datas[2][0] = "2013";
-//datas[2][1] = "nomi_budget_2013";
+datas[2] = new Array();
+datas[2][0] = "2013";
+datas[2][1] = "nomi_budget_2013";
 
 
 
@@ -92,7 +92,7 @@ var display = function() {
        
        new OpenSpending.Aggregator({
                                    apiUrl: 'http://openspending.org/api',
-                                   localApiCache: 'aggregate.json',
+                                   //localApiCache: 'aggregate.json',
                                    dataset: OpenSpending.identifier,
                                    drilldowns: ['Category', 'Subcategory'],
                                    cuts: ['year:' + OpenSpending.year],
